@@ -1,0 +1,36 @@
+.Nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 4vw;
+
+   .brand{
+    img{
+        margin-top: 1rem;
+        cursor: painter;
+    }
+    .toggle{
+        display: none;
+    }
+   }
+   .links{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+
+    .li{
+       .a{
+        color: brown;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        transition-property: 0ms.3s ease-in-out;
+       &:hover{
+        color: aqua;
+       }
+    } 
+    }
+   }
+}
+

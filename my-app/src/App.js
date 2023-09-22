@@ -1,23 +1,53 @@
-import logo from './logo.svg';
+import ScrollServices from './Components/ScrollServices';
+import Navbar from './Components/Navbar';
+import Portfolio from './Components/Portfolio';
+import Products from './Components/Products';
+import Newsletter from './Components/Newsletter';
+import Footer from './Components/Footer';
+import Services from './Components/Services';
+import Hero from './Components/Hero';
 import './App.css';
+import Testimonials from './Components/Testimonials';
+import scrollreveal from "scrollreveal";
+import React, { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: "top",
+      distance: "80px",
+      duration: 2000,
+      reset: false,
+    });
+    sr.reveal(
+      `
+        nav,
+        #home,
+        #services,
+        #portfolio,
+        #testimonials,
+        #products,
+        #newsletter,
+        .footer
+    `,
+      {
+        opacity: 0,
+        interval: 200,
+      }
+    );
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <ScrollServices/>
+        <Navbar/>
+        <Hero/>
+        <Services/>
+        <Portfolio/>
+        <Testimonials/>
+        <Products/>
+        
+        <Newsletter/>
+        <Footer/>
     </div>
   );
 }
