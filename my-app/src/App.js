@@ -6,6 +6,7 @@ import Newsletter from './Components/Newsletter';
 import Footer from './Components/Footer';
 import Services from './Components/Services';
 import Hero from './Components/Hero';
+import Contact from './Components/Contact';
 import './App.css';
 import Testimonials from './Components/Testimonials';
 import scrollreveal from "scrollreveal";
@@ -28,6 +29,7 @@ function App() {
         #testimonials,
         #products,
         #newsletter,
+        #contact,
         .footer
     `,
       {
@@ -45,8 +47,8 @@ function App() {
         <Portfolio/>
         <Testimonials/>
         <Products/>
-        
         <Newsletter/>
+        <Contact/>
         <Footer/>
     </div>
   );

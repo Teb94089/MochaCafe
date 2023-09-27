@@ -12,22 +12,15 @@ export default function Footer() {
         <div className="brand container">
           <img src={logo} alt="" />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
-            repudiandae.
+          Mocha Cafe's story begins with a deep-rooted love for the art of coffee-making.
           </p>
           <ul>
-            <li>
-            <img src={AiFillInstagram} alt="" />
-            </li>
-            <li>
-            <img src={FaFacebookF} alt="" />
-            </li>
-            <li>
-            <img src={BsTwitter} alt="" />
-            </li>
-            <li>
-            <img src={GrLinkedinOption} alt="" />
-            </li>
+          <a href="https://www.linkedin.com/in/nonkululeko-tebeni-938a86190/">
+              <i className="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Teb94089">
+              <i className="fa fa-github"></i>
+            </a>
           </ul>
         </div>
         <div className="about container">
@@ -35,9 +28,8 @@ export default function Footer() {
             <h3>About Us</h3>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-            eligendi repellat laudantium blanditiis iure nulla, ut aliquam
-            itaque unde nesciunt cum veritatis perferendis vel expedita! Nam
+          Welcome to Mocha Cafe, where the passion for coffee and the love of community come together to create an exceptional experience.
+          Inspired by the vibrant coffee culture of places, we set out on a journey to craft a unique space that not only serves exceptional coffee but also fosters meaningful connections.
           </p>
         </div>
         <div className="contact container">
@@ -45,9 +37,9 @@ export default function Footer() {
             <h3>Contact Us</h3>
           </div>
           <p>+91 1231231231</p>
-          <p>foodyummy@gmail.com</p>
-          <p>@foodyummy</p>
-          <p>412 Street, Ground Floor, India</p>
+          <p>mochacafe@gmail.com</p>
+          <p>@mochacafe</p>
+          <p>412 Street, Ground Floor, South Africa</p>
         </div>
       </Section>
       <LowerFooter className="lower__footer">

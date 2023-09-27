@@ -21,8 +21,7 @@ export default function Hero() {
         <div className="info">
           <h2>We ARE OPEN</h2>
           <em>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            aspernatur itaque, eius quia voluptas numquam!
+          Our menu is a testament to our dedication to quality and variety. 
           </em>
           <button>ORDER NOW</button>
         </div>

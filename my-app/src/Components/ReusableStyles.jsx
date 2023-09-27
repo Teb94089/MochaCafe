@@ -44,3 +44,18 @@ export const TitleStyles = css`
     }
   }
 `;
+
+// Define ButtonStyles here
+export const ButtonStyles = css`
+  padding: 0.6rem 3rem;
+  letter-spacing: 0.2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  border: none;
+  color: white;
+  background-color: #fc4958;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: #f9c74f;
+  }
+`;

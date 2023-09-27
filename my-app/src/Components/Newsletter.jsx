@@ -9,13 +9,11 @@ export default function Newsletter() {
           <span>Subscribe</span> Newsletter
         </h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quas
-          perferendis nesciunt illum, voluptas nulla laborum alias similique
-          praesentium quam.
+        Be the first to know of any specials, launches, rewards and more.
         </p>
       </div>
       <div className="container">
-        <input type="text" placeholder="Search for food ..." />
+        <input type="text" placeholder="email@example.com" />
         <button>Search</button>
       </div>
     </Section>

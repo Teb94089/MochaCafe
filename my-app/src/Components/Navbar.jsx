@@ -103,6 +103,11 @@ export default function Navbar() {
               Newsletter
             </a>
           </li>
+          <li>
+            <a href="#contact" onClick={() => setNavbarState(false)}>
+              Contact Us
+            </a>
+          </li>
         </ul>
       </ResponsiveNav>
       </>
@@ -110,6 +115,7 @@ export default function Navbar() {
 }
 const Nav = styled.nav`
   display: flex;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   padding: 0 4vw;
