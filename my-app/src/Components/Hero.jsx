@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import hero from "../assets/chocolate-cake.jpg";
+import hero from "../assets/chocC.jpg";
 import heroDesign from "../assets/chocC.jpg";
 export default function Hero() {
   
@@ -11,20 +11,21 @@ export default function Hero() {
         <img src={hero} alt="Background Image" />
       </div>
       <div className="content">
-        <div className="sale">
-          <img src={heroDesign} alt="" />
-          <h1>
-            BIG SALE
-            <span>50% OFF</span>
-          </h1>
-        </div>
-        <div className="info">
-          <h2>We ARE OPEN</h2>
+      <div className="info">
+          <h2>MOCHA CAFE</h2>
           <em>
           Our menu is a testament to our dedication to quality and variety. 
           </em>
           <button>ORDER NOW</button>
         </div>
+        <div className="sale">
+          <img src={heroDesign} alt="" />
+          <h1>
+          We ARE OPEN
+            <span></span>
+          </h1>
+        </div>
+       
       </div>
     </Section>
   );
@@ -53,7 +54,7 @@ const Section = styled.section`
     width: 100%;
     .sale {
       position: relative;
-      left: 10%;
+      left: 60%;
       img {
         height: 70vh;
       }
@@ -72,10 +73,10 @@ const Section = styled.section`
     .info {
       position: absolute;
       top: 40%;
-      right: 10%;
+      left: 10%;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: flex-start;
       gap: 1rem;
       h2 {
         color: #f9c74f;
@@ -93,7 +94,7 @@ const Section = styled.section`
       button {
         padding: 1rem 2rem;
         font-size: 1.4rem;
-        background-color: #fc4958;
+        background-color: rgba(11, 190, 173,0.8);
         border: none;
         color: white;
         font-weight: 800;

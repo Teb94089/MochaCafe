@@ -13,6 +13,26 @@ export default function Contact() {
             <ItemPrice>R 24 / R 32</ItemPrice>
           </MenuItem>
           <MenuItem>
+            <ItemName>Espresso</ItemName>
+            <ItemPrice>R 24 / R 32</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Espresso</ItemName>
+            <ItemPrice>R 24 / R 32</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Americano</ItemName>
+            <ItemPrice>R 28</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Americano</ItemName>
+            <ItemPrice>R 28</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Americano</ItemName>
+            <ItemPrice>R 28</ItemPrice>
+          </MenuItem>
+          <MenuItem>
             <ItemName>Americano</ItemName>
             <ItemPrice>R 28</ItemPrice>
           </MenuItem>
@@ -83,10 +103,12 @@ const MenuContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: grey;
+  border-radius:10%;
 `;
 
 const MenuHeader = styled.h1`
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
 `;
@@ -103,7 +125,8 @@ const MenuCategory = styled.h2`
 const MenuGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Gap between items */
+  gap: 10px; /* Gap between items */
+  border-bottom: 50%;
 `;
 
 const MenuItem = styled.div`
@@ -112,10 +135,10 @@ const MenuItem = styled.div`
 `;
 
 const ItemName = styled.h3`
-  font-size: 20px;
+  font-size: 14px;
 `;
 
 const ItemPrice = styled.p`
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 `;

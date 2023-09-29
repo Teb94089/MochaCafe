@@ -1,113 +1,97 @@
 import React from "react";
 import styled from "styled-components";
-import avatar1 from "../assets/blackco.jpg";
-import { imageZoomEffect, TitleStyles } from "./ReusableStyles";
+import background from "../assets/summer.jpg";
 export default function Testimonials() {
   return (
-    <Section id="testimonials">
-      <div className="container">
-        <div className="title">
-          <h1>
-            <span>What</span> Customers Says
-          </h1>
-        </div>
-        <div className="testimonials">
-          <div className="testimonial">
-            <div className="image">
-              <img src={avatar1} alt="" />
-            </div>
-            <p>
-              He Printing and Typesetting the industry. <span>Lorem Ipsum</span>{" "}
-              has been the Industry's
-            </p>
-          </div>
-          <div className="testimonial">
-            <div className="image">
-              <img src={avatar1} alt="" />
-            </div>
-            <p>
-              He Printing and Typesetting the industry. <span>Lorem Ipsum</span>{" "}
-              has been the Industry's
-            </p>
-          </div>
-          <div className="testimonial">
-            <div className="image">
-              <img src={avatar1} alt="" />
-            </div>
-            <p>
-              He Printing and Typesetting the industry. <span>Lorem Ipsum</span>{" "}
-              has been the Industry's
-            </p>
-          </div>
-        </div>
+    <Section id="portfolio">
+      <div className="background">
+        <img src={background} alt="" />
+      </div>
+      <div className="content">
+        <h1>Buy Premium Pan Free Hand Toast!</h1>
+        <h2>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          molestias!
+        </h2>
+        <button>Buy Now</button>
       </div>
     </Section>
   );
 }
 
 const Section = styled.section`
-  margin: 5vw;
-  background: linear-gradient(to right, #fc4958, #e85d04, #fc4958);
-  padding: 0.2rem;
-  border-radius: 1.5rem;
+  height: 80vh;
   position: relative;
-  .container {
-    margin: 0.5rem;
-    padding-top: 1vw;
-    padding-bottom: 4vw;
-    background-color: white;
-    border-radius: 1rem;
-    ${TitleStyles};
-    .title {
-      position: absolute;
-      top: -1rem;
-      left: 25%;
-      padding: 0 2rem;
-      background-color: white;
+  border-radius: 5rem;
+  &:hover {
+    .background {
+      img {
+        transform: scale(1.2);
+      }
     }
-    .testimonials {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 6vw;
-      margin-top: 3vw;
-      .testimonial {
-        padding: 0 4vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-        p {
-          font-size: 1.1rem;
-          line-height: 2rem;
-          letter-spacing: 0.1rem;
-          span {
-            color: #fc4958;
-          }
-        }
-        ${imageZoomEffect};
-        .image {
-          overflow: hidden;
-          width: max-content;
-          max-height: 10rem;
-          border-radius: 10rem;
-          img {
-            height: 10rem;
-          }
-        }
+  }
+  .background {
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      filter: brightness(60%);
+      border-radius: 1rem;
+      transition: 0.8s ease-in-out;
+    }
+  }
+  .content {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+      font-size: 3rem;
+      width: 60%;
+    }
+    h2 {
+      width: 60%;
+    }
+    button {
+      border: none;
+      padding: 1rem 4rem;
+      font-size: 1.4rem;
+      color: white;
+      border-radius: 4rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      background: linear-gradient(to right, #fc4958, #e85d04);
+      text-transform: uppercase;
+      &:hover {
+        background: linear-gradient(to right, #e85d04, #fc4958);
       }
     }
   }
   @media screen and (min-width: 260px) and (max-width: 1080px) {
-    .container {
-      .title {
-        position: initial;
-        background-color: transparent;
+    /* display: none; */
+    .content {
+      h1 {
+        width: 90%;
+        font-size: 1.5rem;
       }
-      .testimonials {
-        flex-direction: column;
+      h2 {
+        font-size: 1.2em;
+        width: 90%;
+      }
+      button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
       }
     }
   }
 `;
+

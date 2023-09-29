@@ -2,7 +2,7 @@ import ScrollServices from './Components/ScrollServices';
 import Navbar from './Components/Navbar';
 import Portfolio from './Components/Portfolio';
 import Products from './Components/Products';
-import Newsletter from './Components/Newsletter';
+import ContactUs from './Components/ContactUs';
 import Footer from './Components/Footer';
 import Services from './Components/Services';
 import Hero from './Components/Hero';
@@ -28,7 +28,7 @@ function App() {
         #portfolio,
         #testimonials,
         #products,
-        #newsletter,
+        #contactus,
         #contact,
         .footer
     `,
@@ -44,11 +44,10 @@ function App() {
         <Navbar/>
         <Hero/>
         <Services/>
-        <Portfolio/>
-        <Testimonials/>
+       
         <Products/>
-        <Newsletter/>
-        <Contact/>
+        <ContactUs/>
+        
         <Footer/>
     </div>
   );

@@ -40,31 +40,27 @@ export default function Navbar() {
         About Us
       </a>
     </li>
-    <li>
+    {/*<li>
       <a href ="#portfolio" >
-        Portfolio 
+        Our Coffee 
       </a>
     </li>
     <li>
       <a href ="#testimonials" >
-        Testimonials
+        Our Food
       </a>
-    </li>
+    </li>*/}
     <li>
       <a href ="#products">
         Menu
       </a>
-    </li>
+      </li>
     <li>
       <a href ="#newsletter">
-        Newsletter
-      </a>
-    </li>
-    <li>
-      <a href ="#contact">
         Contact Us
       </a>
     </li>
+   
   </ul>
     </Nav>
       <ResponsiveNav state={navbarState} className={navbarState ? "show" : ""}>
@@ -83,24 +79,19 @@ export default function Navbar() {
               Our Services
             </a>
           </li>
-          <li>
+          {/*<li>
             <a href="#portfolio" onClick={() => setNavbarState(false)}>
-              Portfolio
+             Our Coffee
             </a>
           </li>
           <li>
             <a href="#testimonials" onClick={() => setNavbarState(false)}>
-              Testimonials
+              Our Food
             </a>
-          </li>
+              </li>*/}
           <li>
             <a href="#products" onClick={() => setNavbarState(false)}>
               Products
-            </a>
-          </li>
-          <li>
-            <a href="#newsletter" onClick={() => setNavbarState(false)}>
-              Newsletter
             </a>
           </li>
           <li>
@@ -108,17 +99,19 @@ export default function Navbar() {
               Contact Us
             </a>
           </li>
+         
         </ul>
       </ResponsiveNav>
       </>
   )
 }
 const Nav = styled.nav`
+  
   display: flex;
   top: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4vw;
+  padding: 2vw 4vw;
   .brand {
     img {
       margin-top: 1rem;
@@ -134,7 +127,7 @@ const Nav = styled.nav`
     gap: 2rem;
     li {
       a {
-        color: #fc4958;
+        color: #09BEAD;
         font-weight: 600;
         text-decoration: none;
         text-transform: uppercase;
@@ -145,7 +138,7 @@ const Nav = styled.nav`
         }
       }
       .active {
-        color: #f9c74f;
+        color: #09BEAD;
       }
     }
   }

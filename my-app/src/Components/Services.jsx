@@ -8,6 +8,7 @@ import service4Icon from '../assets/philosophy.png';
 import service5Icon from '../assets/cloud-connection.png';
 import service6Icon from '../assets/sustainability.png';
 import { TitleStyles, ButtonStyles } from './ReusableStyles';
+import { Typing, TypingStep } from "typing-effect-reactjs";
 
 const Service = ({ icon, title, description, buttonText }) => (
   <ServiceContainer>
@@ -20,19 +21,15 @@ const Service = ({ icon, title, description, buttonText }) => (
 
 const Services = () => (
   <Section id="services">
-    <BackgroundImage src={serviceBackground} alt="Background Image" />
+  
     <ServiceSection>
       <ServiceTitle className="yellow">About Mocha Cafe</ServiceTitle>
       <ServiceDescription>
-        Welcome to Mocha Cafe, where the passion for coffee and the love of community come together to create an exceptional experience. Inspired by the vibrant coffee culture of places, we set out on a journey to craft a unique space that not only serves exceptional coffee but also fosters meaningful connections.
+      <Typing text="Welcome to Mocha Cafe, where the passion for coffee and the love of community come together to create an exceptional experience. Inspired by the vibrant coffee culture of places, we set out on a journey to craft a unique space that not only serves exceptional coffee but also fosters meaningful connections." />
+        
       </ServiceDescription>
     </ServiceSection>
-    <ServiceSection>
-      <ServiceTitle className="yellow">Our Story</ServiceTitle>
-      <ServiceDescription>
-        Mocha Cafe's story begins with a deep-rooted love for the art of coffee-making. Our founder, Yolanda Tebeni, embarked on a mission to create a cafe that captures the essence of great coffee and the warmth of human connections. Drawing inspiration from the rich coffee traditions found across the globe, we set out to bring a taste of the world to your neighborhood.
-      </ServiceDescription>
-    </ServiceSection>
+   
     <ServicesGrid>
       <Service icon={service1Icon} title="Our Story" description="Mocha Cafe's story begins with a deep-rooted love for the art of coffee-making. Our founder, Yolanda Tebeni, embarked on a mission to create a cafe that captures the essence of great coffee and the warmth of human connections." buttonText="Read More" />
       <Service icon={service2Icon} title="The Mocha Experience" description="Step into Mocha Cafe, and you'll instantly feel the inviting ambiance that sets us apart. Our cafe is designed to be your sanctuary—a place where you can savor a meticulously brewed cup of coffee while immersing yourself in a community of like-minded individuals." buttonText="Discover" />
@@ -44,28 +41,46 @@ const Services = () => (
   </Section>
 );
 
+// ... (previous imports and component definitions)
+
 const Section = styled.section`
-  margin: 2rem 4rem;
-  ${TitleStyles};
+margin: 50px 0 0 0;
+height: auto;
+min-height: 35rem;
+padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  position: relative;
 `;
 
 const BackgroundImage = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: brightness(60%);
+  filter: brightness(80%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; 
 `;
 
 const ServiceSection = styled.div`
   margin-top: 4rem;
+  text-align: center;
 `;
 
 const ServicesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  justify-content: center;
   
+
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -75,11 +90,12 @@ const ServiceContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgb(69 211 255 / 27%);
+   
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 `;
 
 const ServiceIcon = styled.img`
@@ -88,16 +104,23 @@ const ServiceIcon = styled.img`
 
 const ServiceTitle = styled.h2`
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #f9c74f;
+        
+        letter-spacing: 0.5rem;
 `;
 
 const ServiceDescription = styled.p`
   margin-top: 1rem;
+  color: black; 
 `;
 
 const ServiceButton = styled.button`
   ${ButtonStyles};
   margin-top: 1rem;
+  background-color: rgba(11, 190, 173,0.8);
 `;
+
+
 
 export default Services;
