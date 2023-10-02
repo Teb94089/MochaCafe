@@ -8,6 +8,7 @@ import { Main } from "./ReusableStyles";
 
   export default function Portfolio() {
     return (
+      
     <Section id="portfolio">
      <div className="main-ontainer">
         <div className="container">

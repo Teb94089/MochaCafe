@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { imageZoomEffect, TitleStyles } from "./ReusableStyles";
 import background from "../assets/summer.jpg";
@@ -31,9 +31,33 @@ export default function Testimonials() {
       price: "R12.5/pcs",
     },
   ];
-  
+  {/*const [product1, setPrduct1] = useState("");
+  const [product2, setPrduct2] = useState("");
+  const [product3, setPrduct3] = useState("");
+  const [product4, setPrduct4] = useState("");
+
+  const handleMouseEnter = (e) => {
+    if (e.target.id == "HTML") {
+      setPrduct1(true);
+    } else if (e.target.id == "CSS") {
+      setPrduct2(true);
+    } else if (e.target.id == "JavaS...") {
+      setPrduct3(true);
+    } else if (e.target.id =="PHP") {
+      setPrduct4(true);
    
-         
+    }
+  };
+  const handleMouseLeave = () => {
+    setPrduct1();
+    setPrduct2();
+    setPrduct3();
+    setPrduct4();
+   
+    
+  };
+   
+*/}       
 
  
   return (
@@ -49,6 +73,7 @@ export default function Testimonials() {
             <div className="product">
               <div className="image">
                 <img src={product.image} alt="" />
+               
               </div>
               <h2>{product.name}</h2>
               <h3>{product.price}</h3>

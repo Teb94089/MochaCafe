@@ -78,8 +78,9 @@ export default function ContactUs() {
   }
 
   return (
+    <div className="main-container " >
     <Section id="contactus">
-       <div className="main-container " >
+       
     <div className="central-form">
           
           <div className="back-form">
@@ -135,8 +136,9 @@ export default function ContactUs() {
             
           </div>
         </div>
-        </div>
         </Section>
+        </div>
+      
   );
 }
 

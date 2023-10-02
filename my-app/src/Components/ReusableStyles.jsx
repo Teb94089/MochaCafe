@@ -85,7 +85,14 @@ export const Main = css`
 // Define ContactStyles here
 export const ContactStyles = css`
 .main-container {
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+  height: auto;
+  min-height: 35rem;
+  padding: 20rem 0;
  
 }
 

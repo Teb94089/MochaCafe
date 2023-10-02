@@ -6,6 +6,7 @@ export default function Hero() {
   
 
   return (
+    <div className="main-container " >
     <Section id="home">
       <div className="background">
         <img src={hero} alt="Background Image" />
@@ -28,6 +29,7 @@ export default function Hero() {
        
       </div>
     </Section>
+    </div>
   );
 }
 
