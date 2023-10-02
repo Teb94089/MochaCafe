@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Products from './Products';
 import serviceBackground from '../assets/summer.jpg';
 import service1Icon from '../assets/history.png';
 import service2Icon from '../assets/coffee.png';
@@ -31,7 +32,9 @@ const Services = () => (
     </ServiceSection>
    
     <ServicesGrid>
-      <Service icon={service1Icon} title="Our Story" description="Mocha Cafe's story begins with a deep-rooted love for the art of coffee-making. Our founder, Yolanda Tebeni, embarked on a mission to create a cafe that captures the essence of great coffee and the warmth of human connections." buttonText="Read More" />
+      <Service icon={service1Icon} title="Our Story" description="Mocha Cafe's story begins with a deep-rooted love for the art of coffee-making. Our founder, Yolanda Tebeni, embarked on a mission to create a cafe that captures the essence of great coffee and the warmth of human connections." buttonText="Read More"
+      
+      />
       <Service icon={service2Icon} title="The Mocha Experience" description="Step into Mocha Cafe, and you'll instantly feel the inviting ambiance that sets us apart. Our cafe is designed to be your sanctuary—a place where you can savor a meticulously brewed cup of coffee while immersing yourself in a community of like-minded individuals." buttonText="Discover" />
       <Service icon={service3Icon} title="Coffee Culture" description="At the heart of our cafe is an unwavering commitment to the art and science of coffee. We source the finest beans from around the world, carefully roast them to perfection, and skillfully prepare each cup with dedication. Our baristas are passionate about their craft, ensuring that every sip of our coffee is a journey in itself." buttonText="Explore" />
       <Service icon={service4Icon} title="Our Menu Philosophy" description="Our menu is a testament to our dedication to quality and variety. From our handcrafted espresso beverages to our delectable pastries and artisanal sandwiches, we take pride in offering an array of choices that cater to every palate. Be sure to explore our signature Mocha creations that are sure to tantalize your taste buds." buttonText="View Menu" />
@@ -75,11 +78,11 @@ const ServiceSection = styled.div`
 
 const ServicesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 2rem;
   margin-top: 2rem;
   justify-content: center;
-  
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;

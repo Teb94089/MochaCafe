@@ -44,7 +44,8 @@ function App() {
         <Navbar/>
         <Hero/>
         <Services/>
-       
+        <Portfolio/>
+        <Testimonials/>
         <Products/>
         <ContactUs/>
         

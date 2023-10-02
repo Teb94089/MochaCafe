@@ -78,12 +78,18 @@ export default function ContactUs() {
   }
 
   return (
-    <Section>
+    <Section id="contactus">
        <div className="main-container " >
     <div className="central-form">
           
           <div className="back-form">
-            
+          <div className="img-back">
+              <h2>
+                Please, Send Your Message Here!
+                <p></p>
+                <img src={imgBack} alt="image is missing" />
+              </h2>
+            </div>
             <form onSubmit={submitForm}>
           
             <span>
@@ -126,13 +132,7 @@ export default function ContactUs() {
                 </button>
               </div>
             </form>
-            <div className="img-back">
-              <h2>
-                Please, Send Your Message Here!
-                <p></p>
-                <img src={imgBack} alt="image is missing" />
-              </h2>
-            </div>
+            
           </div>
         </div>
         </div>

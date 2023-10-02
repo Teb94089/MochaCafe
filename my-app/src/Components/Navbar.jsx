@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/Mochalogo.png";
 import styled from 'styled-components';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
     <Nav>
-      <div className='Brand'>
+      <div className='brand'>
        <img src ={logo} alt=""/>
        <div className='toggle'>
        {navbarState ? (
@@ -40,7 +40,7 @@ export default function Navbar() {
         About Us
       </a>
     </li>
-    {/*<li>
+    <li>
       <a href ="#portfolio" >
         Our Coffee 
       </a>
@@ -49,14 +49,14 @@ export default function Navbar() {
       <a href ="#testimonials" >
         Our Food
       </a>
-    </li>*/}
+    </li>
     <li>
       <a href ="#products">
         Menu
       </a>
       </li>
     <li>
-      <a href ="#newsletter">
+      <a href ="#contactus">
         Contact Us
       </a>
     </li>
@@ -79,7 +79,7 @@ export default function Navbar() {
               Our Services
             </a>
           </li>
-          {/*<li>
+          <li>
             <a href="#portfolio" onClick={() => setNavbarState(false)}>
              Our Coffee
             </a>
@@ -88,14 +88,14 @@ export default function Navbar() {
             <a href="#testimonials" onClick={() => setNavbarState(false)}>
               Our Food
             </a>
-              </li>*/}
+              </li>
           <li>
             <a href="#products" onClick={() => setNavbarState(false)}>
               Products
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={() => setNavbarState(false)}>
+            <a href="#contactus" onClick={() => setNavbarState(false)}>
               Contact Us
             </a>
           </li>
@@ -116,6 +116,8 @@ const Nav = styled.nav`
     img {
       margin-top: 1rem;
       cursor: pointer;
+      height:30px;
+      width:100px;
     }
     .toggle {
       display: none;

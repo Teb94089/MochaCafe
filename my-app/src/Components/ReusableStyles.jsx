@@ -19,7 +19,17 @@ export const TitleStyles = css`
       font-size: 3rem;
       text-transform: uppercase;
       span {
-        color: #fc4958;
+        color:  rgba(11, 190, 173,0.8);
+      }
+    }
+    .yellow {
+      color: #f9c74f;
+    }
+    h3 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      span {
+        color:  rgba(11, 190, 173,0.8);
       }
     }
     .yellow {
@@ -59,17 +69,30 @@ export const ButtonStyles = css`
     background-color: #f9c74f;
   }
 `;
-// Define ButtonStyles here
+//main-container
+export const Main = css`
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+  height: auto;
+  min-height: 35rem;
+  padding: 14rem 0;
+}
+`;
+// Define ContactStyles here
 export const ContactStyles = css`
 .main-container {
-  padding: 8rem 0;
+ 
  
 }
 
 .central-form {
   height:50%;
   max-width: 1100px;
-  padding: 10px;
+  padding:10px ;
   display: flex;
   box-shadow: 0 0px 20px -2px #1f2235;
   border-radius: 12px;

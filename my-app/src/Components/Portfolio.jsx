@@ -2,56 +2,64 @@ import React from "react";
 import styled from "styled-components";
 import avatar1 from "../assets/blackco.jpg";
 import { imageZoomEffect, TitleStyles } from "./ReusableStyles";
+import { Main } from "./ReusableStyles";
+
+
 
   export default function Portfolio() {
-  return (
-    <Section id="testimonials">
-      <div className="container">
-        <div className="title">
-          <h1>
-            <span>Our</span> Coffee
-          </h1>
+    return (
+    <Section id="portfolio">
+     <div className="main-ontainer">
+        <div className="container">
+          <div className="title">
+            <h1>
+              <span>Our</span> Coffee
+            </h1>
+          </div>
+          <div className="testimonials">
+            <div className="testimonial">
+              <div className="image">
+                <img src={avatar1} alt="" />
+              </div>
+              <p>
+                Expresso <span></span>{" "}
+                
+              </p>
+            </div>
+            <div className="testimonial">
+              <div className="image">
+                <img src={avatar1} alt="" />
+              </div>
+              <p>
+                Cuppocino <span></span>{" "}
+                
+              </p>
+            </div>
+            <div className="testimonial">
+              <div className="image">
+                <img src={avatar1} alt="" />
+              </div>
+              <p>
+                Coffee Bean<span></span>{" "}
+                
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="testimonials">
-          <div className="testimonial">
-            <div className="image">
-              <img src={avatar1} alt="" />
-            </div>
-            <p>
-              He Printing and Typesetting the industry. <span></span>{" "}
-              has been the Industry's
-            </p>
-          </div>
-          <div className="testimonial">
-            <div className="image">
-              <img src={avatar1} alt="" />
-            </div>
-            <p>
-              He Printing and Typesetting the industry. <span></span>{" "}
-              has been the Industry's
-            </p>
-          </div>
-          <div className="testimonial">
-            <div className="image">
-              <img src={avatar1} alt="" />
-            </div>
-            <p>
-              He Printing and Typesetting the industry. <span></span>{" "}
-              has been the Industry's
-            </p>
-          </div>
         </div>
-      </div>
-    </Section>
+      </Section>
   );
 }
 
+
 const Section = styled.section`
+${Main};
   margin: 5vw;
   background: linear-gradient(to right, #fc4958, #e85d04, #fc4958);
   padding: 0.2rem;
   border-radius: 1.5rem;
   position: relative;
+ 
   .container {
     margin: 0.5rem;
     padding-top: 1vw;

@@ -11,16 +11,16 @@ export default function Footer() {
     <div className="footer">
       <Section1 id="newsletter">
       <div className="title">
-        <h1>
+        <h3>
           <span>Subscribe</span> Newsletter
-        </h1>
+        </h3>
         <p>
         Be the first to know of any specials, launches, rewards and more.
         </p>
       </div>
       <div className="container">
         <input type="text" placeholder="email@example.com" />
-        <button>Search</button>
+        <button>Subscribe</button>
       </div>
     </Section1>
       <Section>
@@ -75,12 +75,12 @@ const Section1 = styled.section`
   align-items: center;
   ${TitleStyles};
   .container {
-    background: linear-gradient(to right, #fc4958, #e85d04, #fc4958);
+    background:  rgba(11, 190, 173,0.8);
     padding: 0.3vw;
     input {
       border: none;
-      padding: 1.5rem 8rem 1.5rem 1rem;
-      font-size: 1.3rem;
+      padding: 1.3rem 6rem 1.3rem 0.8rem;
+      font-size: 1rem;
       &:focus {
         outline: none;
       }
@@ -97,7 +97,7 @@ const Section1 = styled.section`
       cursor: pointer;
       &:hover {
         letter-spacing: 0.6rem;
-        padding: 1rem 2  rem;
+        padding: 1rem 2rem;
       }
     }
   }
@@ -123,7 +123,7 @@ const Section1 = styled.section`
 `;
 const Section = styled.footer`
   margin: 0;
-  background: linear-gradient(to right, #fc4958, #e85d04);
+  background:  rgba(11, 190, 173,0.8);
   color: white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -189,12 +189,12 @@ const Section = styled.footer`
 const LowerFooter = styled.div`
   margin: 0;
   text-align: center;
-  background-color: black;
-  color: white;
+  background: rgb(69 211 255 / 27%);
+  color: grey;
   padding: 1rem;
   h2 {
     span {
-      color: #fc4958;
+      color: #f9c74f;
       text-transform: uppercase;
     }
   }

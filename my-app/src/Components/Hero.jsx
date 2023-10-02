@@ -32,6 +32,7 @@ export default function Hero() {
 }
 
 const Section = styled.section`
+padding:0;
   height: 90vh;
   width: 100vw;
   position: relative;
