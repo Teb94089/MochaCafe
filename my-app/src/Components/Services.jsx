@@ -50,7 +50,7 @@ const Section = styled.section`
 margin: 50px 0 0 0;
 height: auto;
 min-height: 35rem;
-padding: 10rem 0;
+padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;

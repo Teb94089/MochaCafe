@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import avatar1 from "../assets/blackco.jpg";
+import avatar1 from "../assets/expresso.jpg";
+import avatar2 from "../assets/cappatino.jpg";
+import avatar3 from "../assets/blackco.jpg";
 import { imageZoomEffect, TitleStyles } from "./ReusableStyles";
 import { Main } from "./ReusableStyles";
 
@@ -8,7 +10,7 @@ import { Main } from "./ReusableStyles";
 
   export default function Portfolio() {
     return (
-      
+
     <Section id="portfolio">
      <div className="main-ontainer">
         <div className="container">
@@ -29,7 +31,7 @@ import { Main } from "./ReusableStyles";
             </div>
             <div className="testimonial">
               <div className="image">
-                <img src={avatar1} alt="" />
+                <img src={avatar2} alt="" />
               </div>
               <p>
                 Cuppocino <span></span>{" "}
@@ -38,30 +40,36 @@ import { Main } from "./ReusableStyles";
             </div>
             <div className="testimonial">
               <div className="image">
-                <img src={avatar1} alt="" />
+                <img src={avatar3} alt="" />
               </div>
               <p>
                 Coffee Bean<span></span>{" "}
                 
               </p>
             </div>
+           
           </div>
         </div>
         </div>
       </Section>
-  );
+  ); 
 }
 
 
+
 const Section = styled.section`
-${Main};
+.main-container {
+  min-height: 100rem;
+  padding: 14rem 14rem;
+}
   margin: 5vw;
-  background: linear-gradient(to right, #fc4958, #e85d04, #fc4958);
+  background-color: rgba(11, 190, 173,0.8);
   padding: 0.2rem;
   border-radius: 1.5rem;
   position: relative;
  
   .container {
+    
     margin: 0.5rem;
     padding-top: 1vw;
     padding-bottom: 4vw;

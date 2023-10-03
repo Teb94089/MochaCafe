@@ -12,7 +12,7 @@ export default function Products() {
     <Section id="products">
       <div className="title">
     <h1>
-      <span></span> 
+      <span>In-Store Menu</span> 
     </h1>
   </div>
   <MenuContainer>
@@ -21,35 +21,36 @@ export default function Products() {
       <MenuGrid>
         <MenuItem>
           <ItemName>Espresso</ItemName>
-          <ItemPrice>R 24 / R 32</ItemPrice>
+          <ItemPrice>R 23</ItemPrice>
         </MenuItem>
         <MenuItem>
-          <ItemName>Espresso</ItemName>
-          <ItemPrice>R 24 / R 32</ItemPrice>
+          <ItemName>Black Coffee</ItemName>
+          <ItemPrice>R 26</ItemPrice>
         </MenuItem>
         <MenuItem>
-          <ItemName>Espresso</ItemName>
-          <ItemPrice>R 24 / R 32</ItemPrice>
-        </MenuItem>
-        <MenuItem>
-          <ItemName>Americano</ItemName>
-          <ItemPrice>R 28</ItemPrice>
+          <ItemName>White Coffee</ItemName>
+          <ItemPrice>R 24</ItemPrice>
         </MenuItem>
         <MenuItem>
           <ItemName>Americano</ItemName>
           <ItemPrice>R 28</ItemPrice>
         </MenuItem>
+        
         <MenuItem>
-          <ItemName>Americano</ItemName>
-          <ItemPrice>R 28</ItemPrice>
+          <ItemName>Cortado</ItemName>
+          <ItemPrice>R 25</ItemPrice>
         </MenuItem>
         <MenuItem>
-          <ItemName>Americano</ItemName>
-          <ItemPrice>R 28</ItemPrice>
+          <ItemName>Flat White</ItemName>
+          <ItemPrice>R 27</ItemPrice>
+        </MenuItem>
+        <MenuItem>
+          <ItemName>Latte</ItemName>
+          <ItemPrice>R 32</ItemPrice>
         </MenuItem>
         <MenuItem>
           <ItemName>Cappuccino</ItemName>
-          <ItemPrice>R 34</ItemPrice>
+          <ItemPrice>R 35</ItemPrice>
         </MenuItem>
       </MenuGrid>
     </MenuSection><MenuSection>
@@ -68,9 +69,14 @@ export default function Products() {
         <MenuCategory>Iced Coffee</MenuCategory>
         <MenuGrid>
           <MenuItem>
-            <ItemName>Cold Brew</ItemName>
+            <ItemName>Classic</ItemName>
             <ItemPrice>R 36</ItemPrice>
           </MenuItem>
+          <MenuItem>
+            <ItemName>Gourmet</ItemName>
+            <ItemPrice>R 50</ItemPrice>
+          </MenuItem>
+
           {/* Add more iced coffee items here */}
         </MenuGrid>
       </MenuSection><MenuSection>
@@ -84,6 +90,26 @@ export default function Products() {
             <ItemName>Muffin</ItemName>
             <ItemPrice>R 18</ItemPrice>
           </MenuItem>
+          <MenuItem>
+            <ItemName>Chocolate cake</ItemName>
+            <ItemPrice>R 180</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Carrot cake</ItemName>
+            <ItemPrice>R 110</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Vanilla cake</ItemName>
+            <ItemPrice>R 100</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Velvet cake</ItemName>
+            <ItemPrice>R 150</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Blackforest cake</ItemName>
+            <ItemPrice>R 120</ItemPrice>
+          </MenuItem>
           {/* Add more cake items here */}
         </MenuGrid>
       </MenuSection><MenuSection>
@@ -91,6 +117,18 @@ export default function Products() {
         <MenuGrid>
           <MenuItem>
             <ItemName>Classic Burger</ItemName>
+            <ItemPrice>R 45</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Cheese Burger</ItemName>
+            <ItemPrice>R 45</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Beef Burger</ItemName>
+            <ItemPrice>R 45</ItemPrice>
+          </MenuItem>
+          <MenuItem>
+            <ItemName>Chicken Burger</ItemName>
             <ItemPrice>R 45</ItemPrice>
           </MenuItem>
           {/* Add more burger items here */}
@@ -103,11 +141,13 @@ export default function Products() {
 
 
 const Section = styled.div`
-
+height: auto;
+min-height: 35rem;
+padding: 8rem 0;
 .title {
   position: absolute;
   top: -1rem;
-  left: 25%;
+  left: 35%;
   padding: 0 2rem;
   background-color: white;
 }
@@ -118,7 +158,7 @@ const MenuContainer = styled.div`
   padding: 20px;
   background: rgb(69 211 255 / 27%);
    
-  border-radius:10%;
+ 
 `;
 
 

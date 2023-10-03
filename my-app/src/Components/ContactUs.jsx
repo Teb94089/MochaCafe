@@ -8,7 +8,7 @@ import GraphemeSplitter from "grapheme-splitter";
 import { toast } from "react-toastify";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import imgBack from "../assets/chocolate-cake.jpg";
+import imgBack from "../assets/Moch.png";
 import load1 from "../assets/load2.gif";
 
 export default function ContactUs() {
@@ -80,7 +80,11 @@ export default function ContactUs() {
   return (
     <div className="main-container " >
     <Section id="contactus">
-       
+    <div className="title">
+    <h1>
+      <span>Contact US</span> 
+    </h1>
+  </div>
     <div className="central-form">
           
           <div className="back-form">
@@ -97,7 +101,7 @@ export default function ContactUs() {
               <h2 className="title">
                 <Typewriter
                   options={{
-                    strings: ["GET ME TO CALL YOU 📧"],
+                    strings: ["GET ME TO CONTACT YOU 📧"],
                     delay: 150,
                     pauseFor: 1500,
                     autoStart: true,
@@ -143,6 +147,14 @@ export default function ContactUs() {
 }
 
 const Section = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 50px 0 0 0;
+height: auto;
+min-height: 35rem;
+padding: 6rem 0;
   ${ContactStyles};
 `;
 

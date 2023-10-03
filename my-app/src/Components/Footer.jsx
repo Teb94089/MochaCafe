@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { TitleStyles } from "./ReusableStyles";
-import logo from "../assets/choco.jpg";
+import logo from "../assets/Moch.png";
 import AiFillInstagram from "../assets/insta.png"; // Update import statements
 import FaFacebookF from "../assets/fbook.png"; // Update import statements
 import GrLinkedinOption from "../assets/link.png"; // Update import statements
@@ -29,21 +29,14 @@ export default function Footer() {
           <p>
           Mocha Cafe's story begins with a deep-rooted love for the art of coffee-making.
           </p>
-          <ul>
-          <a href="https://www.linkedin.com/in/nonkululeko-tebeni-938a86190/">
-              <i className="fa fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Teb94089">
-              <i className="fa fa-github"></i>
-            </a>
-          </ul>
+         
         </div>
         <div className="about container">
           <div className="title">
             <h3>About Us</h3>
           </div>
           <p>
-          Welcome to Mocha Cafe, where the passion for coffee and the love of community come together to create an exceptional experience.
+          At the heart of our cafe is an unwavering commitment to the art and science of coffee.
           
           </p>
         </div>
@@ -51,7 +44,7 @@ export default function Footer() {
           <div className="title">
             <h3>Contact Us</h3>
           </div>
-          <p>+91 1231231231</p>
+          <p>+27 213123129</p>
           <p>mochacafe@gmail.com</p>
           <p>@mochacafe</p>
           <p>412 Street, Ground Floor, South Africa</p>
@@ -127,11 +120,11 @@ const Section = styled.footer`
   color: white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10vw;
-  padding: 4vw;
+  gap: 6vw;
+  padding: 2vw;
   p {
     font-size: 1.1rem;
-    line-height: 2rem;
+    line-height: 1.2rem;
     letter-spacing: 0.1rem;
   }
   ul {
@@ -170,7 +163,7 @@ const Section = styled.footer`
   .container {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.2rem;
     h3 {
       font-size: 2rem;
     }

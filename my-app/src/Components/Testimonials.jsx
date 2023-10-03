@@ -83,7 +83,7 @@ export default function Testimonials() {
         })}
       </div>
     </Section1>
-    <Section id="testimonials">
+    {/*<Section id="testimonials">
         <div className="background">
           <img src={background} alt="" />
         </div>
@@ -94,13 +94,18 @@ export default function Testimonials() {
           </h2>
           <button>Buy Now</button>
         </div>
-      </Section></>
+      </Section>*/}</>
   );
 }
 const Section1 = styled.section`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 margin: 50px 0 0 0;
-    min-height: 20rem;
-    padding: 10rem 0;
+height: auto;
+min-height: 40rem;
+padding: 8rem 0;
   ${TitleStyles};
   .products {
     display: grid;

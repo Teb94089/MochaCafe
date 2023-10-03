@@ -72,6 +72,7 @@ export const ButtonStyles = css`
 //main-container
 export const Main = css`
 .main-container {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,9 +138,10 @@ export const ContactStyles = css`
 }
 
 .back-form .img-back img {
-  width: 50%;
-  height: 50%;
+  width:400px;
+  height: 30%;
   opacity: 0.9;
+ 
 }
 
 .central-form form {
@@ -255,6 +257,7 @@ button .load img {
     margin-right: 20px;
   }
 
+
   form {
     flex: 0.9;
   }
@@ -263,5 +266,6 @@ button .load img {
   .central-form h2 {
     font-size: 16px;
   }
+  
 }
 `;
